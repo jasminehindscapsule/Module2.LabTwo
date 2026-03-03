@@ -1,0 +1,124 @@
+/* I. Selectors */
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid violet;
+}
+
+.style-me1 {
+    color: tomato;
+}
+
+#style-me2 {
+    color: pink;
+}
+
+#style-me2.style-me1 {
+    color: violet;
+}
+/* Put styles for questions 2.1 and 2.2 here */
+.my-descendants-are-styled p {
+    background-color: tomato;
+}
+
+.my-descendants-are-styled > p {
+    background-color: lightgreen;
+}
+
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+.box {
+    background-color: violet;
+    margin: 20px 10px 20px 10px;
+    padding: 60px;
+    width: 100px;
+    height: 100px !important;
+    border: 10px solid lightgreen;
+    box-sizing: content-box;
+    overflow: hidden;
+    outline: 10px solid pink;
+    border-radius: 50%;
+    background-image: url(/assets/images/img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+.position-absolute {
+    position: absolute;
+    top: 0px;
+    background-color: lightblue;
+}
+
+.position-relative {
+    position: right;
+    background-color: lightcoral;
+}
+
+.position-sticky {
+    position: sticky;
+    background-color: tomato;
+    top: 100px;
+}
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+.text-style {
+    color: tomato;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 800;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    letter-spacing: 104px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline overline wavy pink;
+}
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+a, a:link {
+    color: tomato !important;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: dotted underline lightcoral !important;
+}
+
+a:hover, a:active, a:focus {
+    color: lightcoral;
+    text-decoration: dashed underline tomato;
+}
+
+a:visited {
+    color: violet;
+    text-decoration: wavy underline lightblue;
+}
+
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+.calc-style {
+    width: calc(100vw - 100px);
+    background-color: mediumpurple;
+}
+
+/* Create a new selector for the .fixed-width-col class to set its width to 350px and display: inline-block;
+
+Create a second selector for the .fluid-col class  and set display: inline-block; on it as well. This will display the fixed-width-col stacked on top of the fluid-col.
+Use calc() to subtract the width of the fixed-width-col from the total page width and set a dynamically calculated width for the fluid-col so that the two elements appear side-by-side. */
+
+.calc-row > .fixed-width-col {
+    width: 350px;
+    display: inline-block;
+}
+
+.calc-row > .fluid-col {
+    display: inline-block;
+    width: calc(100% - 350px);
+    background-color: lightcoral;
+}
+

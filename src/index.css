@@ -106,15 +106,14 @@ a:visited {
     background-color: mediumpurple;
 }
 
-/* Create a new selector for the .fixed-width-col class to set its width to 350px and display: inline-block;
-
-Create a second selector for the .fluid-col class  and set display: inline-block; on it as well. This will display the fixed-width-col stacked on top of the fluid-col.
-Use calc() to subtract the width of the fixed-width-col from the total page width and set a dynamically calculated width for the fluid-col so that the two elements appear side-by-side. */
-
+/* Create a new selector for the .fixed-width-col class to set its width to 350px and display: inline-block; */
 .calc-row > .fixed-width-col {
     width: 350px;
     display: inline-block;
 }
+
+/* Create a second selector for the .fluid-col class  and set display: inline-block; on it as well. This will display the fixed-width-col stacked on top of the fluid-col.  
+Use calc() to subtract the width of the fixed-width-col from the total page width and set a dynamically calculated width for the fluid-col so that the two elements appear side-by-side. */
 
 .calc-row > .fluid-col {
     display: inline-block;
